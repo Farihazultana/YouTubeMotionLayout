@@ -20,7 +20,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvHor"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_container"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="#10000000"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +46,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/main_container"
         app:layout_constraintStart_toStartOf="@+id/main_container"
         app:layout_constraintTop_toTopOf="@+id/main_container"
-        tools:src="@drawable/nature" />
+        android:src="@drawable/nature" />
 
     <ImageView
         android:id="@+id/iv_Close"
