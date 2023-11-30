@@ -25,6 +25,11 @@
             motion:touchAnchorId="@+id/main_container"
             motion:dragDirection="dragDown"
             motion:touchAnchorSide="bottom" />
+
+        <OnClick
+            motion:clickAction="transitionToStart|transitionToEnd"
+            motion:targetId="@+id/main_container" />
+
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
