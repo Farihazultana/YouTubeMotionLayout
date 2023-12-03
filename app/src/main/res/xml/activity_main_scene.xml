@@ -6,7 +6,7 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="600">
        <KeyFrameSet>
            <KeyAttribute
                motion:motionTarget="@+id/iv_Close"
@@ -34,6 +34,16 @@
 
     <ConstraintSet android:id="@+id/start">
 
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toStartOf="@+id/iv_Close"
+            motion:layout_constraintStart_toStartOf="@+id/main_container"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="@+id/iv_Close"
+            android:layout_width="wrap_content"
+            android:id="@+id/iv_Down"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.0" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -102,5 +112,15 @@
             android:alpha="1"
             android:layout_marginStart="8dp"
             motion:layout_constraintTop_toTopOf="@+id/iv_Play" />
+        <Constraint
+            android:id="@+id/iv_Down"
+            motion:layout_constraintEnd_toStartOf="@+id/iv_Close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/iv_Close"
+            android:alpha="0"
+            motion:layout_constraintTop_toTopOf="@+id/iv_MainImageView"
+            motion:layout_constraintStart_toStartOf="@+id/main_container" />
+        <Constraint android:id="@+id/frameLayout" />
     </ConstraintSet>
 </MotionScene>

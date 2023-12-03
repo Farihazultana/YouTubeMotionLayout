@@ -8,6 +8,20 @@
     tools:context=".MainActivity">
 
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -68,6 +82,17 @@
         app:layout_constraintBottom_toBottomOf="@+id/iv_Close"
         app:layout_constraintEnd_toStartOf="@+id/iv_Close"
         app:layout_constraintTop_toTopOf="@+id/iv_Close" />
+
+    <ImageView
+        android:id="@+id/iv_Down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:src="@drawable/ic_down"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_Close"
+        app:layout_constraintEnd_toStartOf="@+id/iv_Close"
+        app:layout_constraintStart_toStartOf="@+id/main_container"
+        app:layout_constraintTop_toTopOf="@+id/iv_MainImageView" />
 
     <TextView
         android:id="@+id/tv_Title"
