@@ -30,6 +30,7 @@
             motion:clickAction="transitionToStart|transitionToEnd"
             motion:targetId="@+id/main_container" />
 
+
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -54,7 +55,7 @@
             android:id="@+id/main_container"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="32dp" />
+            android:layout_marginTop="64dp" />
         <Constraint
             android:id="@+id/frameLayout"
             motion:layout_constraintEnd_toEndOf="parent"
@@ -66,15 +67,14 @@
             motion:layout_constraintTop_toTopOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
         <Constraint
-            android:id="@+id/frameLayout"
-            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintEnd_toEndOf="@id/main_container"
             android:layout_width="0dp"
-            android:layout_height="1dp"
-            motion:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
-            motion:layout_constraintVertical_bias="0.0"
-            motion:layout_constraintHorizontal_bias="0.0"
-            motion:layout_constraintTop_toTopOf="parent"
-            motion:layout_constraintStart_toStartOf="parent" />
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/main_container"
+            motion:layout_constraintTop_toTopOf="@+id/main_container"
+            motion:layout_constraintStart_toStartOf="@+id/main_container"
+            android:id="@+id/iv_MainImageView"
+            android:layout_marginTop="0dp" />
 
     </ConstraintSet>
 

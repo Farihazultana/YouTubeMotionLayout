@@ -46,7 +46,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_container"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="500dp"
         android:background="#10000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -62,7 +62,7 @@
         app:layout_constraintStart_toStartOf="@+id/main_container"
         app:layout_constraintEnd_toEndOf="@id/main_container"
         app:layout_constraintTop_toTopOf="@+id/main_container"
-        android:src="@drawable/nature" />
+        android:src="@drawable/album_cover" />
 
     <ImageView
         android:id="@+id/iv_Close"
@@ -94,7 +94,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/iv_Close"
         app:layout_constraintEnd_toStartOf="@+id/iv_Close"
         app:layout_constraintStart_toStartOf="@+id/main_container"
-        app:layout_constraintTop_toTopOf="@+id/iv_MainImageView" />
+        app:layout_constraintTop_toTopOf="@+id/main_container" />
 
     <TextView
         android:id="@+id/tv_Title"
